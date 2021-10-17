@@ -11,7 +11,13 @@ router.get('/', function(req, res) {
 
 router.get('/learning', (req, res) => {
   return res.json({
-    message: 'Hello Student'
+    message: 'Hello student'
+  })
+})
+
+router.get('/youtube', (req, res) => {
+  return res.json({
+    message: 'Hello, youtube'
   })
 })
 
