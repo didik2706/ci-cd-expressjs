@@ -20,3 +20,13 @@ test("GET /users/learning", () => {
             expect(data.body.message).toBe('Hello student')
         })
 })
+
+test("GET /users/youtube", () => {
+    return request(app)
+        .get('/users/youtube')
+        .set('Content-Type', 'application/json')
+        .expect(200)
+        .then(data => {
+            expect(data.body.message).toBe('Hello, Youtube')
+        })
+})
