@@ -17,7 +17,7 @@ router.get('/learning', (req, res) => {
 
 router.get('/youtube', (req, res) => {
   return res.json({
-    message: 'Hello, youtube'
+    message: 'Hello, Youtube'
   })
 })
 

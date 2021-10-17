@@ -27,6 +27,6 @@ test("GET /users/youtube", () => {
         .set('Content-Type', 'application/json')
         .expect(200)
         .then(data => {
-            expect(data.body.message).toBe('Hello, youtube')
+            expect(data.body.message).toBe('Hello, Youtube')
         })
 })
